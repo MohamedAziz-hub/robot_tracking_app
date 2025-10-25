@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.egg-info/
+*.env
+
+# Flask / Web
+instance/
+*.log
+*.sqlite
+*.pyc
+
+# ROS
+devel/
+build/
+*.bag
+
+# IDE / Editor
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini

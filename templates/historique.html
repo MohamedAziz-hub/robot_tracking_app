@@ -1,0 +1,30 @@
+<!-- templates/historique.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Historique des trajets</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Historique des trajets du robot</h1>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Date</th>
+      <th>Durée (pts)</th>
+      <th>Sorties</th>
+      <th>Action</th>
+    </tr>
+    {% for t in trajets %}
+    <tr>
+      <td>{{ t[0] }}</td>
+      <td>{{ t[1] }}</td>
+      <td>{{ t[2] }}</td>
+      <td>{{ t[3] }}</td>
+      <td><a href="/trajet/{{ t[0] }}">Voir le tracé</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/">← Retour</a>
+</body>
+</html>
